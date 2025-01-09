@@ -22,7 +22,10 @@ class SectionHeader extends StatelessWidget {
             onPressed: onSeeMore,
             child: Text(
               'See more',
-              style: TextStyle(fontSize: 12,color: AppColor.darkGrey, fontWeight: FontWeight.w400),
+              style: TextStyle(
+                  fontSize: 12,
+                  color: AppColor.darkGrey,
+                  fontWeight: FontWeight.w400),
             )),
       ],
     );

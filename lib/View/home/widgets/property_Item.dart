@@ -9,7 +9,7 @@ import '../../../Res/components/modify_text.dart';
 class PropertyItem extends StatelessWidget {
   final Property property;
 
-  const PropertyItem({required this.property});
+  const PropertyItem({super.key, required this.property});
 
   @override
   Widget build(BuildContext context) {
@@ -81,59 +81,5 @@ class PropertyItem extends StatelessWidget {
         ],
       ),
     );
-    // return Card(
-    //   elevation: 2,
-    //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-    //   child: Column(
-    //     crossAxisAlignment: CrossAxisAlignment.start,
-    //     children: [
-    //       ClipRRect(
-    //         borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
-    //         child: Image.network(
-    //           property.imageUrl,
-    //           height: 272,
-    //           width: double.infinity,
-    //           fit: BoxFit.cover,
-    //         ),
-    //       ),
-    //       Padding(
-    //         padding: const EdgeInsets.all(8.0),
-    //         child: Column(
-    //           crossAxisAlignment: CrossAxisAlignment.start,
-    //           children: [
-    //             if (property.distance > 0)
-    //               Text('${property.distance.toStringAsFixed(1)} km',
-    //                   style: TextStyle(fontSize: 12, color: Colors.grey)),
-    //             Text(property.name,
-    //                 style:
-    //                     TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-    //             Text(property.address,
-    //                 style: TextStyle(fontSize: 14, color: Colors.grey)),
-    //             if (property.price > 0)
-    //               Text(
-    //                 'Rp ${property.price.toStringAsFixed(0)} / ${property.priceType}',
-    //                 style: TextStyle(
-    //                     fontSize: 14,
-    //                     fontWeight: FontWeight.bold,
-    //                     color: Colors.blue),
-    //               ),
-    //             if (property.bedrooms > 0 && property.bathrooms > 0)
-    //               Row(
-    //                 children: [
-    //                   Icon(Icons.king_bed_outlined, size: 16),
-    //                   SizedBox(width: 4),
-    //                   Text('${property.bedrooms} Bedroom'),
-    //                   SizedBox(width: 8),
-    //                   Icon(Icons.bathtub_outlined, size: 16),
-    //                   SizedBox(width: 4),
-    //                   Text('${property.bathrooms} Bathroom'),
-    //                 ],
-    //               ),
-    //           ],
-    //         ),
-    //       ),
-    //     ],
-    //   ),
-    // );
   }
 }
