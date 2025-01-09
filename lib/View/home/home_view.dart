@@ -81,8 +81,6 @@ class HomeView extends StatelessWidget {
                         spacing: 24,
                         children: controller.bestForYouProperties
                             .map((property) => SizedBox(
-                                  // width: 250,
-                                  // height: 400,
                                   child: PropertyList(property: property),
                                 ))
                             .toList(),

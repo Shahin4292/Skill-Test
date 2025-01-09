@@ -6,6 +6,7 @@ class AppColor {
   static const Color darkGrey = Color(0xFF858585);
   static const Color cyan = Color(0xFFB8B8B8);
   static const Color lightGrey = Color(0xFFD7D7D7);
+  static const Color blueShade = Color(0xFF0A8ED9);
 }
 
 class GradientColor {

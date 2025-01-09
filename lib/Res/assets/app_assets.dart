@@ -3,6 +3,11 @@ class AppAssets {
   static const String downArrow = "assets/icons/down_arrow.svg";
   static const String menu = "assets/icons/menu.svg";
   static const String locationsIcon = "assets/icons/location.svg";
+  static const String bathroom = "assets/icons/bathroom.svg";
+  static const String bedroom = "assets/icons/bedroom.svg";
+
+
+
   static const String dreamsVileHouse = "assets/png/dreamsvile_house.png";
   static const String ascotHouse = "assets/png/ascot_house.png";
   static const String dreamsVille = "assets/png/dreamsville.png";
@@ -11,7 +16,7 @@ class AppAssets {
   static const String breezesHouse = "assets/png/breezes_house.png";
   static const String homeBreeze = "assets/png/home_breeze.png";
   static const String orchad = "assets/png/orchad.png";
-  static const String bedroom = "assets/png/bedroom.png";
+  static const String bedroomHouse = "assets/png/bedroom.png";
   static const String drawingRoom = "assets/png/drawing_room.png";
 // static const String image3 = "assets/png/image3.png";
 // static const String bedrooms = "assets/png/bedroom.png";
