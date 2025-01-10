@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../Res/colors/app_colors.dart';
 
 class PositionWidget extends StatelessWidget {
   final double? top, left, right;
   final VoidCallback onTab;
-  final String imageUrl;
+  final String imageIcon;
   final double? height;
   final double? weight;
 
@@ -15,7 +16,7 @@ class PositionWidget extends StatelessWidget {
     this.left,
     this.right,
     required this.onTab,
-    required this.imageUrl,
+    required this.imageIcon,
     this.height,
     this.weight,
   });
@@ -34,8 +35,8 @@ class PositionWidget extends StatelessWidget {
             decoration:
                 BoxDecoration(color: AppColor.darkGrey, shape: BoxShape.circle),
             child: Center(
-              child: Image.asset(
-                imageUrl,
+              child: SvgPicture.asset(
+                imageIcon,
                 height: height,
                 width: weight,
                 color: Colors.white,

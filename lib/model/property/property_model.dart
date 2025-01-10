@@ -3,10 +3,10 @@ class Property {
   final String address;
   final String imageUrl;
   final double price;
-  final String priceType; // e.g., "Year" or "Month"
+  final String priceType;
   final int bedrooms;
   final int bathrooms;
-  final double distance; // e.g., 1.8 km
+  final double distance;
 
   Property({
     required this.name,

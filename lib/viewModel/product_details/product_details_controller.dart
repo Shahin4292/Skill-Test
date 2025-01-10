@@ -1,10 +1,17 @@
 import 'package:get/get.dart';
 
 import '../../Model/property/property_model.dart';
+import '../../Res/assets/app_assets.dart';
 
 class PropertyDetailsController extends GetxController {
   final Rx<Property?> property = Rx<Property?>(null);
   final bool isFavorite = false;
+  final List<String> imageUrls = [
+    AppAssets.drawing, // Replace with your image paths
+    AppAssets.bedRoom,
+    AppAssets.table,
+    AppAssets.overlay,
+  ];
 
   @override
   void onInit() {
@@ -13,10 +20,4 @@ class PropertyDetailsController extends GetxController {
       property.value = Get.arguments;
     }
   }
-
-// void toggleFavorite() {
-//   property.update((prop) {
-//     if (prop != null) prop.isFavorite = !prop.isFavorite;
-//   });
-// }
 }

@@ -7,6 +7,7 @@ import 'package:skill_test/View/home/widgets/property_list.dart';
 import 'package:skill_test/View/home/widgets/search_menu.dart';
 import 'package:skill_test/View/home/widgets/section_header.dart';
 import '../../ViewModel/home/home_controller.dart';
+import '../details_product/details_product_view.dart';
 
 class HomeView extends StatelessWidget {
   HomeView({super.key});
@@ -57,9 +58,27 @@ class HomeView extends StatelessWidget {
                       spacing: 24,
                       children: controller.nearProperties
                           .map((property) => SizedBox(
-                                // width: 250,
-                                // height: 400,
-                                child: PropertyItem(property: property),
+                                child: GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  DetailsProductView(
+                                                    imageUrl: property.imageUrl,
+                                                    name: property.name,
+                                                    address: property.address,
+                                                    bedrooms: property.bedrooms,
+                                                    bathrooms:
+                                                        property.bathrooms,
+                                                    price: property.price,
+                                                    priceType:
+                                                        property.priceType,
+                                                  )));
+                                    },
+                                    child: PropertyItem(
+                                      property: property,
+                                    )),
                               ))
                           .toList(),
                     ),
@@ -80,9 +99,7 @@ class HomeView extends StatelessWidget {
                       child: Column(
                         spacing: 24,
                         children: controller.bestForYouProperties
-                            .map((property) => SizedBox(
-                                  child: PropertyList(property: property),
-                                ))
+                            .map((property) => PropertyList(property: property))
                             .toList(),
                       ),
                     )),

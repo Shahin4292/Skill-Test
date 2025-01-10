@@ -4,7 +4,7 @@ import '../../Model/property/property_model.dart';
 import '../../Repository/property_repository/property_repository.dart';
 
 class HomeController extends GetxController {
-  final PropertyRepository _repository = PropertyRepository();
+  final PropertyRepository repository = PropertyRepository();
   var nearProperties = <Property>[].obs;
   var bestForYouProperties = <Property>[].obs;
   var selectedCategory = "House".obs;
@@ -27,7 +27,7 @@ class HomeController extends GetxController {
   }
 
   void fetchProperties() {
-    nearProperties.value = _repository.getNearProperties();
-    bestForYouProperties.value = _repository.getBestForYouProperties();
+    nearProperties.value = repository.getNearProperties();
+    bestForYouProperties.value = repository.getBestForYouProperties();
   }
 }
