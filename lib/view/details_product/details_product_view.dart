@@ -8,19 +8,20 @@ import '../../Res/components/modify_text.dart';
 import '../../viewModel/product_details/product_details_controller.dart';
 
 class DetailsProductView extends StatelessWidget {
+  final String? imageUrl;
   final String? name;
   final String? address;
-  final String? imageUrl;
   final int? bedrooms;
   final int? bathrooms;
 
-  DetailsProductView(
-      {super.key,
-      this.imageUrl,
-      this.name,
-      this.address,
-      this.bedrooms,
-      this.bathrooms});
+  DetailsProductView({
+    super.key,
+    this.imageUrl,
+    this.name,
+    this.address,
+    this.bedrooms,
+    this.bathrooms,
+  });
 
   PropertyDetailsController controller = Get.put(PropertyDetailsController());
 
@@ -30,6 +31,7 @@ class DetailsProductView extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               height: 319,
@@ -71,19 +73,29 @@ class DetailsProductView extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                         ),
                         ModifiedText(
-                          text: address!,
+                          text: '$address, Jakarta selatan',
                           size: 16,
-                          color: Colors.white,
+                          color: AppColor.lightGrey,
                           fontWeight: FontWeight.w500,
                         ),
                         Row(
                           spacing: 8,
                           children: [
-                            SvgPicture.asset(
-                              AppAssets.bedroom,
-                              height: 13,
-                              width: 16,
-                              color: AppColor.darkGrey,
+                            Container(
+                              height: 28,
+                              width: 28,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(6),
+                                color: AppColor.darkGrey,
+                              ),
+                              child: Center(
+                                child: SvgPicture.asset(
+                                  AppAssets.bedroom,
+                                  height: 13,
+                                  width: 16,
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                             ModifiedText(
                               text: '$bedrooms Bedroom',
@@ -94,11 +106,21 @@ class DetailsProductView extends StatelessWidget {
                             SizedBox(
                               width: 15,
                             ),
-                            SvgPicture.asset(
-                              AppAssets.bathroom,
-                              height: 13,
-                              width: 16,
-                              color: AppColor.darkGrey,
+                            Container(
+                              height: 28,
+                              width: 28,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(6),
+                                color: AppColor.darkGrey,
+                              ),
+                              child: Center(
+                                child: SvgPicture.asset(
+                                  AppAssets.bathroom,
+                                  height: 13,
+                                  width: 16,
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                             ModifiedText(
                               text: '$bathrooms Bathroom',
@@ -114,6 +136,34 @@ class DetailsProductView extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(
+              height: 21,
+            ),
+            ModifiedText(
+              text: 'Description',
+              size: 16,
+              fontWeight: FontWeight.w500,
+              color: Colors.black,
+            ),
+            SizedBox(
+              height: 21,
+            ),
+            RichText(
+                text: TextSpan(children: [
+              TextSpan(
+                  text:
+                      "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars...",
+                  style: TextStyle(
+                      color: AppColor.darkGrey,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 12)),
+              TextSpan(
+                  text: 'See More',
+                  style: TextStyle(
+                      color: Colors.blue,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 12)),
+            ]))
           ],
         ),
       ),
