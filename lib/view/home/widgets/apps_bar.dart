@@ -39,7 +39,7 @@ class AppsBar extends StatelessWidget {
                 ),
                 SvgPicture.asset(
                   AppAssets.downArrow,
-                  height: 10,
+                  height: 7,
                   width: 10,
                 )
               ],
