@@ -63,12 +63,14 @@ class DetailsProductView extends StatelessWidget {
                   text:
                       "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars...",
                   style: TextStyle(
+                      fontFamily: 'RaleWayBold',
                       color: AppColor.darkGrey,
                       fontWeight: FontWeight.w400,
                       fontSize: 12)),
               TextSpan(
                   text: 'See More',
                   style: TextStyle(
+                      fontFamily: 'RaleWayBold',
                       color: AppColor.blueShade,
                       fontWeight: FontWeight.w500,
                       fontSize: 13)),

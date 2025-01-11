@@ -24,6 +24,7 @@ class SearchMenu extends StatelessWidget {
               contentPadding: EdgeInsets.symmetric(horizontal: 20),
               hintText: 'Search address, or near you',
               hintStyle: TextStyle(
+                  fontFamily: 'RaleWayBold',
                   color: AppColor.darkGrey,
                   fontSize: 12,
                   fontWeight: FontWeight.w400),

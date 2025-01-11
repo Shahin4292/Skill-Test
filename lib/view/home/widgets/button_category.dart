@@ -33,6 +33,7 @@ class ButtonCategory extends StatelessWidget {
             child: Text(
               label,
               style: TextStyle(
+                fontFamily: 'RaleWayBold',
                 fontSize: 12,
                 color: isSelected ? Colors.white : AppColor.darkGrey,
                 fontWeight: FontWeight.w500,

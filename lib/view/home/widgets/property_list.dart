@@ -35,6 +35,7 @@ class PropertyList extends StatelessWidget {
               text: property.name,
               size: 16,
               fontWeight: FontWeight.w500,
+              color: Colors.black,
             ),
             ModifiedText(
               text:

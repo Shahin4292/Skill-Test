@@ -31,7 +31,7 @@ class CustomDrawer extends StatelessWidget {
                 )),
             if (isLastInGroup && index != drawerItems.length - 1)
               Padding(
-                padding: const EdgeInsets.only(right: 40),
+                padding: const EdgeInsets.only(right: 20),
                 child: const Divider(
                   color: Colors.white,
                   thickness: 1,
@@ -53,7 +53,7 @@ class CustomDrawer extends StatelessWidget {
     TextStyle? textStyle,
   }) {
     return Padding(
-      padding: const EdgeInsets.only(right: 40,),
+      padding: const EdgeInsets.only(right: 20,bottom: 10),
       child: Container(
         decoration: BoxDecoration(
           color: isSelected ? Colors.white : Colors.transparent,
@@ -75,10 +75,11 @@ class CustomDrawer extends StatelessWidget {
                 TextStyle(
                   color: isSelected ? Colors.blue : Colors.white,
                   fontSize: 16,
+                  fontFamily: 'RaleWayBold',
                   fontWeight: isSelected ? FontWeight.w500 : FontWeight.w400,
                 ),
           ),
-          onTap: onTap, // Handle selection
+          onTap: onTap,
         ),
       ),
     );

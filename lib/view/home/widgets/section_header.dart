@@ -15,6 +15,7 @@ class SectionHeader extends StatelessWidget {
       children: [
         Text(title,
             style: TextStyle(
+                fontFamily: 'RaleWayBold',
                 fontSize: 16,
                 color: Colors.black,
                 fontWeight: FontWeight.w500)),
@@ -23,6 +24,7 @@ class SectionHeader extends StatelessWidget {
             child: Text(
               'See more',
               style: TextStyle(
+                fontFamily: 'RaleWayBold',
                   fontSize: 12,
                   color: AppColor.darkGrey,
                   fontWeight: FontWeight.w400),
