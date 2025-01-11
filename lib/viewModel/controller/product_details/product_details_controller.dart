@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import '../../Model/property/property_model.dart';
-import '../../Res/assets/app_assets.dart';
+import '../../../Model/property/property_model.dart';
+import '../../../Res/assets/app_assets.dart';
 
 class PropertyDetailsController extends GetxController {
   final Rx<Property?> property = Rx<Property?>(null);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../viewModel/product_details/product_details_controller.dart';
+
+import '../../../viewModel/controller/product_details/product_details_controller.dart';
 
 class PropertyGallery extends StatelessWidget {
   PropertyGallery({

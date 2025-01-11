@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import '../../Model/property/property_model.dart';
-import '../../Repository/property_repository/property_repository.dart';
+import '../../../Model/property/property_model.dart';
+import '../../../Repository/property_repository/property_repository.dart';
 
 class HomeController extends GetxController {
   final PropertyRepository repository = PropertyRepository();

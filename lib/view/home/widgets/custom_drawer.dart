@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-import '../../../utils/utils.dart';
-import '../../../viewModel/drawer/drawer_controller.dart';
+import '../../../res/utils/utils.dart';
+import '../../../viewModel/controller/drawer/drawer_controller.dart';
 
 class CustomDrawer extends StatelessWidget {
   final CustomDrawerController controller = Get.put(CustomDrawerController());

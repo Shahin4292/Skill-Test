@@ -7,7 +7,7 @@ import 'package:skill_test/view/details_product/widgets/price_action_button.dart
 import 'package:skill_test/view/details_product/widgets/property_gallery.dart';
 import '../../Res/colors/app_colors.dart';
 import '../../Res/components/modify_text.dart';
-import '../../viewModel/product_details/product_details_controller.dart';
+import '../../viewModel/controller/product_details/product_details_controller.dart';
 
 class DetailsProductView extends StatelessWidget {
   final String? imageUrl;

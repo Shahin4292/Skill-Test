@@ -1,4 +1,4 @@
-import '../Res/assets/app_assets.dart';
+import '../assets/app_assets.dart';
 
 final List<Map<String, dynamic>> drawerItems = [
   {
