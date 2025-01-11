@@ -9,6 +9,14 @@ class AppAssets {
   static const String arrowBack = "assets/icons/arrow_back.svg";
   static const String phone = "assets/icons/phone.svg";
   static const String message = "assets/icons/message.svg";
+  static const String logOut = "assets/icons/logOut.svg";
+  static const String help = "assets/icons/help.svg";
+  static const String setting = "assets/icons/setting.svg";
+  static const String messages = "assets/icons/messages.svg";
+  static const String profile = "assets/icons/profile.svg";
+  static const String home = "assets/icons/home.svg";
+  static const String nearby = "assets/icons/nearby.svg";
+  static const String notify = "assets/icons/notify.svg";
 
   static const String dreamsVileHouse = "assets/png/dreamsvile_house.png";
   static const String ascotHouse = "assets/png/ascot_house.png";
@@ -24,16 +32,4 @@ class AppAssets {
   static const String overlay = "assets/png/overlay.png";
   static const String map = "assets/png/map.png";
   static const String men = "assets/png/men.png";
-
-//
-// static const String location = "assets/png/location.png";
-// static const String bathroom = "assets/icons/bathroom.svg";
-// static const String bedroom = "assets/icons/bedroom.svg";
-// static const String saveIcon = "assets/icons/saveIcon.svg";
-// static const String logOut = "assets/icons/logOut.svg";
-// static const String help = "assets/icons/help.svg";
-// static const String setting = "assets/icons/setting.svg";
-// static const String messages = "assets/icons/messages.svg";
-// static const String profile = "assets/icons/profile.svg";
-// static const String home = "assets/icons/home.svg";
 }

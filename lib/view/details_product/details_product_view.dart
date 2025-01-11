@@ -16,7 +16,6 @@ class DetailsProductView extends StatelessWidget {
   final int? bedrooms;
   final int? bathrooms;
   final double? price;
-  final String? priceType;
 
   DetailsProductView({
     super.key,
@@ -26,7 +25,6 @@ class DetailsProductView extends StatelessWidget {
     this.bedrooms,
     this.bathrooms,
     this.price,
-    this.priceType,
   });
 
   PropertyDetailsController controller = Get.put(PropertyDetailsController());
@@ -99,26 +97,17 @@ class DetailsProductView extends StatelessWidget {
               height: 20,
             ),
             Container(
-              width: MediaQuery.sizeOf(context).width,
-              height: 200,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                image: DecorationImage(image: AssetImage(AppAssets.map)),
-              ),
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  Positioned(
-                    bottom: 20,
-                    child: PriceActionButton(
-                      price: price!,
-                      priceType: priceType!,
-                      onRentNow: () {},
-                    ),
-                  )
-                ],
-              ),
-            )
+                width: MediaQuery.sizeOf(context).width,
+                height: 280,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                      image: AssetImage(AppAssets.map), fit: BoxFit.cover),
+                ),
+                child: PriceActionButton(
+                  price: price!,
+                  onRentNow: () {},
+                ))
           ],
         ),
       ),
