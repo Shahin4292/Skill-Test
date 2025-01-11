@@ -31,14 +31,16 @@ class DetailsProductView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.sizeOf(context);
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          spacing: size.height * .02,
           children: [
             Container(
-              height: 319,
+              height: size.height * 0.4,
               width: MediaQuery.sizeOf(context).width,
               decoration: BoxDecoration(
                   image: DecorationImage(
@@ -49,17 +51,11 @@ class DetailsProductView extends StatelessWidget {
                   bedrooms: bedrooms,
                   bathrooms: bathrooms),
             ),
-            SizedBox(
-              height: 21,
-            ),
             ModifiedText(
               text: 'Description',
               size: 16,
               fontWeight: FontWeight.w500,
               color: Colors.black,
-            ),
-            SizedBox(
-              height: 21,
             ),
             RichText(
                 text: TextSpan(children: [
@@ -73,41 +69,30 @@ class DetailsProductView extends StatelessWidget {
               TextSpan(
                   text: 'See More',
                   style: TextStyle(
-                      color: Colors.blue,
+                      color: AppColor.blueShade,
                       fontWeight: FontWeight.w500,
-                      fontSize: 12)),
+                      fontSize: 13)),
             ])),
-            SizedBox(
-              height: 21,
-            ),
             OwnerContactSection(),
-            SizedBox(
-              height: 20,
-            ),
             ModifiedText(
               text: 'Gallery',
               size: 16,
               fontWeight: FontWeight.w500,
             ),
-            SizedBox(
-              height: 20,
-            ),
             PropertyGallery(),
-            SizedBox(
-              height: 20,
-            ),
             Container(
-                width: MediaQuery.sizeOf(context).width,
-                height: 280,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  image: DecorationImage(
-                      image: AssetImage(AppAssets.map), fit: BoxFit.cover),
-                ),
-                child: PriceActionButton(
-                  price: price!,
-                  onRentNow: () {},
-                ))
+              width: MediaQuery.sizeOf(context).width,
+              height: size.height * .16,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                image: DecorationImage(
+                    image: AssetImage(AppAssets.map), fit: BoxFit.cover),
+              ),
+              child: PriceActionButton(
+                price: price!,
+                onRentNow: () {},
+              ),
+            )
           ],
         ),
       ),

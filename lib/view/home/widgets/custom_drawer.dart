@@ -33,9 +33,8 @@ class CustomDrawer extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(right: 40),
                 child: const Divider(
-                  color: Colors.white70,
+                  color: Colors.white,
                   thickness: 1,
-                  height: 20, // Adjust spacing
                 ),
               ),
           ],
@@ -54,7 +53,7 @@ class CustomDrawer extends StatelessWidget {
     TextStyle? textStyle,
   }) {
     return Padding(
-      padding: const EdgeInsets.only(right: 40, bottom: 30),
+      padding: const EdgeInsets.only(right: 40,),
       child: Container(
         decoration: BoxDecoration(
           color: isSelected ? Colors.white : Colors.transparent,
@@ -75,7 +74,8 @@ class CustomDrawer extends StatelessWidget {
             style: textStyle ??
                 TextStyle(
                   color: isSelected ? Colors.blue : Colors.white,
-                  fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                  fontSize: 16,
+                  fontWeight: isSelected ? FontWeight.w500 : FontWeight.w400,
                 ),
           ),
           onTap: onTap, // Handle selection

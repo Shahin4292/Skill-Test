@@ -52,24 +52,24 @@ class ItemDetails extends StatelessWidget {
             children: [
               ModifiedText(
                 text: name!,
-                size: 16,
+                size: 20,
                 color: Colors.white,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w600,
               ),
               ModifiedText(
                 text: '$address, Jakarta selatan',
-                size: 16,
-                color: AppColor.lightGrey,
-                fontWeight: FontWeight.w500,
+                size: 12,
+                color: AppColor.lightCyan,
+                fontWeight: FontWeight.w400,
               ),
               Row(
                 spacing: 8,
                 children: [
                   Container(
-                    height: 28,
-                    width: 28,
+                    height: 24,
+                    width: 24,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(6),
+                      borderRadius: BorderRadius.circular(5),
                       color: AppColor.darkGrey,
                     ),
                     child: Center(
@@ -83,16 +83,16 @@ class ItemDetails extends StatelessWidget {
                   ),
                   ModifiedText(
                     text: '$bedrooms Bedroom',
-                    size: 16,
-                    color: AppColor.darkGrey,
-                    fontWeight: FontWeight.w500,
+                    size: 12,
+                    color: AppColor.lightCyan,
+                    fontWeight: FontWeight.w400,
                   ),
                   SizedBox(
                     width: 15,
                   ),
                   Container(
-                    height: 28,
-                    width: 28,
+                    height: 24,
+                    width: 24,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6),
                       color: AppColor.darkGrey,
@@ -110,7 +110,7 @@ class ItemDetails extends StatelessWidget {
                     text: '$bathrooms Bathroom',
                     size: 12,
                     fontWeight: FontWeight.w400,
-                    color: AppColor.darkGrey,
+                    color: AppColor.lightCyan,
                   ),
                 ],
               )

@@ -18,7 +18,7 @@ class PriceActionButton extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
-          bottom: 60,
+          bottom: 0,
           left: 0,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,7 +39,7 @@ class PriceActionButton extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 60,
+          bottom: 0,
           right: 0,
           child: GestureDetector(
             onTap: onRentNow,
