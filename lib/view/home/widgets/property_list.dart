@@ -59,7 +59,7 @@ class PropertyList extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                     color: AppColor.darkGrey),
                 SizedBox(
-                  width: 15,
+                  width: 10,
                 ),
                 SvgPicture.asset(
                   AppAssets.bathroom,
