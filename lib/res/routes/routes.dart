@@ -12,6 +12,7 @@ class AppRoutes {
           transitionDuration: const Duration(milliseconds: 250),
           transition: Transition.leftToRightWithFade,
         ),
+
         GetPage(
           name: RouteName.detailsProduct,
           page: () => DetailsProductView(),
