@@ -8,8 +8,8 @@ import 'package:skill_test/View/home/widgets/property_list.dart';
 import 'package:skill_test/View/home/widgets/search_menu.dart';
 import 'package:skill_test/View/home/widgets/section_header.dart';
 import 'package:skill_test/view/home/widgets/custom_drawer.dart';
-import '../../ViewModel/home/home_controller.dart';
 import '../../viewModel/controller/drawer/drawer_controller.dart';
+import '../../viewModel/controller/home/home_controller.dart';
 import '../details_product/details_product_view.dart';
 
 class HomeView extends StatelessWidget {
